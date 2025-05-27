@@ -1,0 +1,2 @@
+1. drop columns eith efficiency 0
+2. 

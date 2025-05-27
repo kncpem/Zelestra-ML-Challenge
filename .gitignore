@@ -1,0 +1,11 @@
+# Ignore virtual environment
+.venv/
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore CatBoost info folder
+catboost_info/
+
+# Ignore model files (optional)
+*.pkl

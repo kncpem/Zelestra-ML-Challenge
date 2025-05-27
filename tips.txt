@@ -1,0 +1,27 @@
+2. Feature Engineering
+New Features:
+Power: voltage * current (direct measure of output).
+
+Temperature Delta: module_temperature - temperature (cooling efficiency).
+
+Maintenance Impact: panel_age / (maintenance_count + 1) (normalize maintenance frequency).
+
+Cloud Impact: cloud_coverage * irradiance (effective sunlight).
+
+Categorical Encoding:
+installation_type: One-hot encode (3 categories).
+
+error_code:
+
+If codes are rare, group into "Other" or create binary flags (e.g., has_error).
+
+One-hot encode if ≤10 unique codes.
+
+string_id: Target encode (if high cardinality) or frequency encode.
+
+
+##########
+Flag Missing Values
+Create a binary column (e.g., voltage_missing) to indicate imputed values.
+
+Helps the model learn if missingness correlates with efficiency.
