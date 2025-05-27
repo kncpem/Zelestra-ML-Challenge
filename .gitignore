@@ -9,3 +9,6 @@ catboost_info/
 
 # Ignore model files (optional)
 *.pkl
+
+# Ignore submission folder
+Submission files/
